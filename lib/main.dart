@@ -111,8 +111,8 @@ class BeautifulPopup {
   Color primaryColor;
 
   BeautifulPopup({
-    @required BuildContext context,
-    @required Type template,
+    required BuildContext context,
+    required Type template,
   }) {
     _context = context;
     _template = template;
@@ -120,8 +120,8 @@ class BeautifulPopup {
   }
 
   static BeautifulPopup customize({
-    @required BuildContext context,
-    @required BeautifulPopupTemplate Function(BeautifulPopup options) build,
+    required BuildContext context,
+    required BeautifulPopupTemplate Function(BeautifulPopup options) build,
   }) {
     final popup = BeautifulPopup(
       context: context,

@@ -4,8 +4,8 @@ import 'dart:ui' as ui;
 import 'package:auto_size_text/auto_size_text.dart';
 
 typedef Widget BeautifulPopupButton({
-  @required String label,
-  @required void Function() onPressed,
+  required String label,
+  required void Function() onPressed,
   TextStyle labelStyle,
   bool outline,
   bool flat,
@@ -158,8 +158,8 @@ abstract class BeautifulPopupTemplate extends StatefulWidget {
 
   BeautifulPopupButton get button {
     return ({
-      @required String label,
-      @required void Function() onPressed,
+      required String label,
+      required void Function() onPressed,
       bool outline = false,
       bool flat = false,
       TextStyle labelStyle = const TextStyle(),
@@ -280,7 +280,7 @@ class BeautifulPopupTemplateState extends State<BeautifulPopupTemplate> {
 class ImageEditor extends CustomPainter {
   ui.Image image;
   ImageEditor({
-    @required this.image,
+    required this.image,
   });
 
   @override

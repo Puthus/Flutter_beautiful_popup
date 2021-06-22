@@ -49,8 +49,8 @@ class TemplateThumb extends BeautifulPopupTemplate {
   @override
   BeautifulPopupButton get button {
     return ({
-      @required String label,
-      @required void Function() onPressed,
+      required String label,
+      required void Function() onPressed,
       bool outline = false,
       bool flat = false,
       TextStyle labelStyle = const TextStyle(),

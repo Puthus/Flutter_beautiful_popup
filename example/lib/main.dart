@@ -303,7 +303,7 @@ popup.show(
   }
 
   openDemo({
-    @required BeautifulPopup demo,
+    required BeautifulPopup demo,
     dynamic title = 'String',
     dynamic content =
         'BeautifulPopup is a flutter package that is responsible for beautify your app popups.',
